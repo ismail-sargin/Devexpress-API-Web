@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<div class="row">
+    <table>
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>HotelId</td>
+                <td>HotelName</td>
+                <td>Date</td>
+                <td>TotalPax</td>
+                <td>Reservation Number</td>
+            </tr>
+        </thead>
+        <tbody>
+                @foreach (var item in ViewBag.Data)
+                {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.HotelId</td>
+                    <td>@item.HotelName</td>
+                    <td>@item.Date</td>
+                    <td>@item.TotalPax</td>
+                    <td>@item.ReservationNumber</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
